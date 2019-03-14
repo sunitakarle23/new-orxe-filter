@@ -9,14 +9,19 @@ import { AirlineFilter } from '../entities/entities'
 })
 export class AirFiltersComponent implements OnInit {
   airFilters: {} = AirlineFilter; 
+  panelOpenState = true;
   constructor(private airService:AirFilterServiceService) { }
-
+  
   ngOnInit() {
     this.airService.createFilters().subscribe((res) => {
       this.airFilters = res;
       console.log("this.airFilters=>", this.airFilters);
 
     });
+  }
+
+  onAirlineChange(event) {
+    console.log("@@@@@@@@ checked value",event.value);
   }
 
 }
