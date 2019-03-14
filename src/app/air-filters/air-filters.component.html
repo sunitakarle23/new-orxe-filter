@@ -1,14 +1,115 @@
-<p>
-  air-filters works!
 
 
-</p>
-<h3>Raised Buttons here</h3>
-<div class="example-button-row">
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
-  <button mat-raised-button disabled>Disabled</button>
-  <a mat-raised-button routerLink=".">Link</a>
+
+  <p>
+    air-filters works!
+  </p>
+
+  <!-- Filter Section -->
+  
+<div class="js-filter-container">
+  <div class="filter-container">
+    <form class="results-filter panel panel-right hotel-redesign-filter" role="form"> 
+        <div class="panel-content">
+          <div class="filter-content">
+              <button mat-raised-button color="primary" class="btn filter-action-button filter-action-reset js-reset-filters" disabled="disabled">Reset Filters</button>
+              <button mat-raised-button color="primary" class="btn btn-secondary filter-action-button">Apply Filters</button>
+          </div>
+
+          <h2 class="filter-header">
+              <span id="filterHeading">Filter by</span>
+              <span aria-hidden="true" class="padding-right-1 from-label right">
+                  From
+              </span>
+          </h2>
+
+
+          <fieldset>
+              <div class="filter-content">
+                  <mat-accordion class="panel-content"> 
+                      <mat-expansion-panel class="divider-dark-border-bottom divider-dark-border-top ang-list">
+                        
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            Personal data
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                    
+                        <mat-form-field>
+                          <input matInput placeholder="First name">                          
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Last name">                          
+                        </mat-form-field>
+
+                      </mat-expansion-panel>
+
+                      <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            Self aware panel
+                          </mat-panel-title>
+                          
+                        </mat-expansion-panel-header>
+                        <p>I'm visible because I am open</p>
+                      </mat-expansion-panel>
+                  </mat-accordion>
+              </div>
+          </fieldset>
+        </div>
+    </form>
+  </div>
 </div>
+
+
+
+<!-- Angular Components used -->
+<div class="angularComponents">
+    
+    <div class="example-button-row componentEnd">
+      <h3>Buttons Module</h3>
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+      <a mat-raised-button routerLink=".">Link</a>
+    </div>
+
+    <div class="componentEnd">
+    <h3>Expansion Module</h3>
+    <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+            <mat-panel-description>
+              Type your name and age
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <mat-form-field>
+            <input matInput placeholder="First name">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Age">
+          </mat-form-field>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+  </div>

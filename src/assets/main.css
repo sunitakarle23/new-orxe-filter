@@ -1,0 +1,149 @@
+.angularComponents{
+  padding: 30px;
+  /* background-color: #fffad9; */
+  border: 1px dashed gray;
+  width: 900px;
+  float: left;
+
+}
+
+.angularComponents button{
+  margin-right: 10px;
+}
+
+.componentEnd{
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+}
+
+
+
+/* ---------------ORXe 2.0 css -------------------*/
+.panel{
+  z-index: 210;
+}
+
+.btn-secondary{
+  color: #fff;
+    background-color: #03648C;
+    border-color: #03648C;
+    font-weight: normal;
+    border-width: 0;
+    border-style: none;
+}
+
+.btn, .btn-icon, .navigation a, .btn-loading-pause, .dealsfinder .content-panel .filter-panel .tb{
+  text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.btn{
+  display: inline-block;
+    margin-bottom: 0;
+    padding: .7em 2.5em;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 3px;
+}
+
+.btn.disabled, .btn:disabled, .btn[disabled], fieldset[disabled] .btn{
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button{
+  overflow: visible;
+}
+
+h3, .cart-subtotal dl.component-subtotal dt, .cart-subtotal dl.component-subtotal li, .cart-subtotal ul.component-subtotal dt, .cart-subtotal ul.component-subtotal li, .results-filter h2, .results-filter .banner .marketing-text-banner p, .banner .marketing-text-banner .results-filter p, .results-filter .banner .marketing-text-banner .heading-text, .banner .marketing-text-banner .results-filter .heading-text, .banner p, .banner .heading-text, .h3{
+  font-size: 1.125rem;
+}
+
+fieldset{
+  border: none;
+  padding: 0;
+}
+
+.padding-right-1{
+  padding-right: 1em !important;
+}
+
+.right{
+  float: right !important;
+}
+
+.divider-dark-border-top{
+  border-top: 1px solid #DAD8DB !important;
+}
+
+.results-filter {
+  display: block;
+    float: left;
+    position: inherit;
+    width: 260px;
+
+    /* other css*/
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    clear: left;
+
+}
+
+
+.filter-container .panel-content{
+  height: auto;
+    overflow-y: initial;
+    overflow-x: initial;
+}
+
+.results-filter .filter-content>.btn{
+  margin: 1em;
+    width: 34%;
+    min-height: 45px;
+    white-space: normal;
+}
+
+.results-filter .filter-action-reset{
+  background-color: #DAD8DB;
+}
+
+.results-filter .filter-action-button{
+  text-transform: capitalize;
+    font-size: medium;
+    padding: 5px 10px;
+    line-height: 1.25em;
+}
+
+.filter-action-reset{
+  color: #021829;
+}
+
+.results-filter .btn-secondary{
+  background-color: #03648C;
+}
+
+.results-filter .filter-header{
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.results-filter .from-label{
+  font-size: 85%;
+}
+
+.results-filter .divider-dark-border-bottom{
+  color: #021829;
+    border-bottom: 1px solid #D8D8D8;
+}
