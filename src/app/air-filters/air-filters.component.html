@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 93a5d7bc16ace6d088c3be8cdbb7f8c2ad4647db
 <div class="js-filter-container">
   <div class="filter-container">
     <form [formGroup]="form" (ngSubmit)="submit()" class="results-filter panel panel-right hotel-redesign-filter" role="form"> 
@@ -29,11 +26,7 @@
                             Airline
                           </mat-panel-title>
                         </mat-expansion-panel-header>
-<<<<<<< HEAD
-
-                          <input matInput placeholder="First name">                          
-                          <input matInput placeholder="Last name">                       
-=======
+                    
                          <mat-panel-description>
                             <ul class="list-unstyled filters-list">
                                 <li formArrayName="airlineFilters" *ngFor="let order of form.controls.airlineFilters.controls; let i = index">
@@ -43,7 +36,7 @@
                                 </li>
                               </ul>                         
                         </mat-panel-description>
->>>>>>> 93a5d7bc16ace6d088c3be8cdbb7f8c2ad4647db
+
                       </mat-expansion-panel>
                       <mat-expansion-panel 
                         (opened)="panelOpenState = true"
