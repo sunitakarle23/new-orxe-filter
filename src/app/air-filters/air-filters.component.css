@@ -6,3 +6,7 @@
     box-shadow: none;
 }
 
+.results-filter .mat-accordion .mat-expansion-panel:first-of-type{
+    border-radius: 0;
+}
+

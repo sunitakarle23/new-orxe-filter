@@ -66,7 +66,7 @@ button{
   overflow: visible;
 }
 
-h3, .cart-subtotal dl.component-subtotal dt, .cart-subtotal dl.component-subtotal li, .cart-subtotal ul.component-subtotal dt, .cart-subtotal ul.component-subtotal li, .results-filter h2, .results-filter .banner .marketing-text-banner p, .banner .marketing-text-banner .results-filter p, .results-filter .banner .marketing-text-banner .heading-text, .banner .marketing-text-banner .results-filter .heading-text, .banner p, .banner .heading-text, .h3{
+.cart-subtotal dl.component-subtotal dt, .cart-subtotal dl.component-subtotal li, .cart-subtotal ul.component-subtotal dt, .cart-subtotal ul.component-subtotal li, .results-filter h2, .results-filter .banner .marketing-text-banner p, .banner .marketing-text-banner .results-filter p, .results-filter .banner .marketing-text-banner .heading-text, .banner .marketing-text-banner .results-filter .heading-text, .banner p, .banner .heading-text{
   font-size: 1.125rem;
 }
 
