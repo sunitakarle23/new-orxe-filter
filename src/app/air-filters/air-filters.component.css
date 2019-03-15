@@ -10,3 +10,19 @@
     border-radius: 0;
 }
 
+.results-filter .mat-expansion-panel-header{
+    padding: 0 10px;
+}
+
+.results-filter .mat-expansion-panel-header-title{
+    font-size: 16px;
+}
+
+.results-filter .mat-expansion-indicator::after{
+    padding: 5px;
+    margin-top: -5px;
+  }
+  
+  .results-filter .mat-expansion-panel-body{
+    padding: 0px 14px 10px;
+  }
