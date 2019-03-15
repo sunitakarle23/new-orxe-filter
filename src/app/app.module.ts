@@ -5,12 +5,12 @@ import { AppComponent } from './app.component';
 import { AirFiltersComponent } from './air-filters/air-filters.component';
 import {MatButtonModule, MatExpansionModule, MatFormFieldModule, MatInputModule, MatCheckboxModule} from '@angular/material';
 import {BrowserAnimationsModule}  from '@angular/platform-browser/animations'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     AirFiltersComponent,
-  
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,9 @@ import {BrowserAnimationsModule}  from '@angular/platform-browser/animations'
     MatFormFieldModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

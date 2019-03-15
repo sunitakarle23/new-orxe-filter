@@ -1,45 +1,69 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 93a5d7bc16ace6d088c3be8cdbb7f8c2ad4647db
 <div class="js-filter-container">
   <div class="filter-container">
-    <form class="results-filter panel panel-right hotel-redesign-filter" role="form"> 
+    <form [formGroup]="form" (ngSubmit)="submit()" class="results-filter panel panel-right hotel-redesign-filter" role="form"> 
         <div class="panel-content">
           <div class="filter-content">
               <button mat-raised-button color="primary" class="btn filter-action-button filter-action-reset js-reset-filters" disabled="disabled">Reset Filters</button>
               <button mat-raised-button color="primary" class="btn btn-secondary filter-action-button">Apply Filters</button>
           </div>
-
           <h2 class="filter-header">
               <span id="filterHeading">Filter by</span>
               <span aria-hidden="true" class="padding-right-1 from-label right">
-                  From
+                From
               </span>
           </h2>
-
-
           <fieldset>
               <div class="filter-content">
                   <mat-accordion class="panel-content"> 
-                      <mat-expansion-panel class="divider-dark-border-bottom divider-dark-border-top ang-list">
-                        
+                      <mat-expansion-panel 
+                        class="divider-dark-border-bottom divider-dark-border-top ang-list"
+                        (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false"
+                      >
                         <mat-expansion-panel-header>
                           <mat-panel-title>
                             Airline
                           </mat-panel-title>
                         </mat-expansion-panel-header>
+<<<<<<< HEAD
 
                           <input matInput placeholder="First name">                          
                           <input matInput placeholder="Last name">                       
+=======
+                         <mat-panel-description>
+                            <ul class="list-unstyled filters-list">
+                                <li formArrayName="airlineFilters" *ngFor="let order of form.controls.airlineFilters.controls; let i = index">
+                                    <mat-checkbox  [formControlName]="i" value="{{airlineFilters[i].Code}}" (change)="onChange($event)">  {{airlineFilters[i].Name}}</mat-checkbox>
+                                    <span>({{airlineFilters[i].ItineraryCount}})</span>
+                                    <span class="pull-right">{{airlineFilters[i].StartPrice | currency}}</span>
+                                </li>
+                              </ul>                         
+                        </mat-panel-description>
+>>>>>>> 93a5d7bc16ace6d088c3be8cdbb7f8c2ad4647db
                       </mat-expansion-panel>
-
-                      <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
+                      <mat-expansion-panel 
+                        (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
                         <mat-expansion-panel-header>
                           <mat-panel-title>
-                            Flight Number
+                              Number of Stops
                           </mat-panel-title>
-                          
                         </mat-expansion-panel-header>
-                        <p>I'm visible because I am open</p>
+                        <mat-panel-description>
+                          <ul class="list-unstyled filters-list">
+                              <li formArrayName="stopsFilter" *ngFor="let order of form.controls.stopsFilter.controls; let i = index">
+                                  <mat-checkbox [formControlName]="i" [value]="stopsFilter[i].StopCount">
+                                    {{stopsFilter[i].StopCount == 0 ? 'Non Stop' : stopsFilter[i].StopCount + ' Stop'}}
+                                  </mat-checkbox>
+                                <label><span>({{stopsFilter[i].ItineraryCount}})</span> </label>
+                                <span class="pull-right">{{stopsFilter[i].StartPrice| currency}}</span>
+                              </li>
+                            </ul>
+                          </mat-panel-description>
                       </mat-expansion-panel>
                   </mat-accordion>
               </div>
@@ -48,8 +72,6 @@
     </form>
   </div>
 </div>
-
-
 
 <!-- Angular Components used -->
 <div class="angularComponents">
